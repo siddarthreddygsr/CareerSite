@@ -1,0 +1,4 @@
+db.users.find({$and: [{"email": "siddarthreddy4923@gmail.com"}, {"name": "G Siddarth Reddy"}]}).pretty()
+
+regex:
+db.users.find({$and: [{"email":{'$regex':'^siddarth'}}]}).pretty()

@@ -1,0 +1,209 @@
+
+.main{
+  padding-top: 50px;
+  width: 100%;
+}
+.searchbox {
+  background-image: url('/static/images/liquid-cheese.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+	/* height: 100%; */
+  /* margin: 150px auto 0; */
+  height: 400px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+
+.searchbox:before {
+    background: linear-gradient(#dbdae1, #cacbce);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+    15px 15px 15px rgba(0,0,0,0.1),
+    20px 20px 15px rgba(0,0,0,0.1),
+    30px 30px 15px rgba(0,0,0,0.1);
+	top: 192px;
+}
+
+.searchbox:after {
+    background: linear-gradient(#dbdae1, #cacbce);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+    15px 15px 15px rgba(0,0,0,0.1),
+    20px 20px 15px rgba(0,0,0,0.1),
+    30px 30px 15px rgba(0,0,0,0.1);
+	top: 191px;
+}
+
+.searchbox form {
+	display: inline-block;
+	font-size: 0px;
+	margin: 150px auto 150px;
+	/* padding: 20px; */
+	position: relative;
+	z-index: 1;
+}
+
+.searchbox input {
+    background: linear-gradient(#ffffff, #cacbce);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+    15px 15px 15px rgba(0,0,0,0.1),
+    20px 20px 15px rgba(0,0,0,0.1),
+    30px 30px 15px rgba(0,0,0,0.1);	
+	border: none;
+	border-radius: 5px 0 0 5px;
+	color: #888;
+	display: block;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	height: 40px;
+	margin: 0;
+	padding: 0 10px;
+	width: 520px;
+}
+
+.ie .searchbox input {
+	line-height: 40px;
+}
+
+.searchbox input::-webkit-input-placeholder {
+   color: #888;
+}
+
+.searchbox input:-moz-placeholder {
+   color: #888;
+}
+
+.searchbox input:focus {
+	/* animation: glow 800ms ease-out infinite alternate; */
+    background: linear-gradient(#dbdae1, #cacbce);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+    15px 15px 15px rgba(0,0,0,0.1),
+    20px 20px 15px rgba(0,0,0,0.1),
+    30px 30px 15px rgba(0,0,0,0.1);
+}
+
+
+.searchbox button{
+    background: #292929;
+	/* background: linear-gradient(#858585, #292929); */
+  background: linear-gradient(#ffffff, #cacbce);
+	color: rgb(7, 201, 7);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+    15px 15px 15px rgba(0,0,0,0.1),
+    20px 20px 15px rgba(0,0,0,0.1),
+    30px 30px 15px rgba(0,0,0,0.1);
+	/* box-sizing: border-box; */
+	/* border: 1px solid #444; */
+    border: none;
+	/* border-left-color: #000; */
+	border-radius: 0 5px 5px 0;
+	/* box-shadow: 0 2px 0 #000; */
+	/* color: #38d39f; */
+	display: block;
+	/* float: left; */
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	height: 40px;
+	line-height: 40px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	/* text-shadow: 0 -1px 0 #000; */
+	width: 80px;
+}	
+	
+.searchbox button:hover,
+.searchbox button:focus {
+    /* background: linear-gradient(#dbdae1, #cacbce); */
+	background-image: linear-gradient(#393939, #292929);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+    15px 15px 15px rgba(0,0,0,0.1),
+    20px 20px 15px rgba(0,0,0,0.1),
+    30px 30px 15px rgba(0,0,0,0.1);
+	color: rgb(7, 201, 7);
+	outline: none;
+}
+
+.searchbox button:active {
+	/* background: #292929; */
+    background: linear-gradient(#dbdae1, #cacbce);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+    15px 15px 15px rgba(0,0,0,0.1),
+    20px 20px 15px rgba(0,0,0,0.1),
+    30px 30px 15px rgba(0,0,0,0.1);
+	top: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    .searchbox {
+        padding: 0;
+    }
+    
+    .searchbox input {
+        width: 70vw;
+    }
+    
+    .searchbox button {
+        width: 15vw;
+    }
+}
+
+.suggestions{
+  width:600px;
+  /* height: 100px; */
+  border:1px solid #000;
+  background-image: linear-gradient(#393939, #292929);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+    15px 15px 15px rgba(0,0,0,0.1),
+    20px 20px 15px rgba(0,0,0,0.1),
+    30px 30px 15px rgba(0,0,0,0.1);
+    z-index: 1;
+  /* margin-top: 50px; */
+}
+.suggestions li{
+  background:#ffffff;
+  padding: 10px 10px;
+  border:1px black solid;
+}
+
+@media screen and (max-width: 768px) {
+    .suggestions {
+        width: 85vw;
+    }
+}
+
+/* .scroll{
+  height: 200px;
+  display: none;
+  overflow-y: auto;
+  text-align: left;
+  border-radius: 10px;
+}
+.search:focus-within + .scroll{
+  display: block;
+} */
+
+.scroll{
+  height: 200px;
+  visibility: hidden;
+  overflow-y: auto;
+  text-align: left;
+  transition: visibility 0s linear 0.3s;
+  border-radius: 10px;
+}
+.search:focus-within + .scroll{
+  visibility: visible;
+  /* transition: visibility 0s linear 0.5s; */
+}
+
+.addnew h2{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: blanchedalmond;
+}

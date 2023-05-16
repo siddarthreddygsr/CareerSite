@@ -1,0 +1,1 @@
+FLASK_APP=app.py FLASK_ENV=development flask run --host=10.6.0.2

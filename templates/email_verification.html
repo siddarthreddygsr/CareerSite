@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="/static/css/styleshome.css">
+<div class="card-wrapper">
+    <div class="card">
+        <div class="login-content">
+        <form name="login_form">
+            <img src="/static/images/email.svg">
+            <h2 class="title">Email Verification</h2>
+            </div>
+            <p style="text-align: center;color: white;">Please verify your email address by clicking on the link sent to your email</p>
+            <p class="error error--hidden"></p>
+            <a href="/" class="btn">LOG IN HERE</a>
+            <a href="/user/sign_up">dont have an account? Signup</a>
+        </form>
+    </div>
+    </div>
+
+</div>
+{% endblock %}

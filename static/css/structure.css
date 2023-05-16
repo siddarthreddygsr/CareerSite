@@ -1,0 +1,358 @@
+/* 
+  Colors: http://getuicolors.com
+*/
+
+/* Setup */
+:root {
+    --black: #000000;
+    --almost-black: #263238;
+    --white: #ffffff;
+    --almost-white: #FBFBFB;
+    --grey-light: #CFD8DC;
+    --grey: #B0BEC5;
+    --grey-medium: #78909C;
+    --grey-dark: #455A64;
+    --primary: #1E88E5;
+    --primary-dark: #1976D2;
+    --secondary: #CFD8DC;
+    --secondary-dark: #B0BEC5;
+    --red: #EF4836;
+  }
+  
+  * {
+    /* position: relative; */
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 18px;
+    /* line-height: 28px; */
+    color: var(--black);
+    background: var(--white);
+  }
+  
+  /* Typography */
+  .center {
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0.5em 0 1em;
+    font-size: 26px;
+    /* line-height: 1.2; */
+    color: var(--almost-black);
+  }
+  
+  h2 {
+    margin: 0em 0 0em;
+    font-size: 20px;
+    /* line-height: 1.2; */
+    /* color: var(--grey-dark); */
+  }
+  
+  p {
+    margin: 24px 0;
+  }
+  
+  /* Cards */
+  .card-wrapper {
+    margin: 0 auto;
+    padding: 90px 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+  /* .img{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  } */
+  .img img{
+      width: 500px;
+  }
+  @media screen and (max-width: 1000px){
+      /* .img img{
+          width: 400px;
+      } */
+  }
+  /* @media screen and (max-width: 900px){
+      .img{
+          display: none;
+      }
+  } */
+  .card {
+    margin: 0 30px 60px;
+    padding: 20px 40px;
+    width: 460px;
+    /* box-shadow: 0 8px 26px -4px rgba(0,0,0,0.15); */
+    border-radius: 5px;
+    background: var(--white);
+  }
+  
+  @media only screen and (max-width: 520px) {
+    .card-wrapper {
+      padding: 30px 0 0;
+    }
+  }
+  
+  @media only screen and (max-width: 520px) {
+    .card {
+      margin: 0 0 30px;
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+  
+  /* Forms */
+  form {
+    transition: opacity .15s ease;
+  }
+  
+  form.loading {
+    pointer-events: none;
+    opacity: 0.75;
+  }
+  
+  label {
+    margin: 0 0 2px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: var(--grey-medium);
+    display: block;
+  }
+  
+  .field {
+    margin: 0 0 24px;
+    padding: 11px 16px 9px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--almost-black);
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    display: block;
+    background: var(--almost-white);
+    transition: border-color .15s ease;
+  }
+  
+  .field:focus {
+    border-color: var(--grey-medium);
+    outline: none;
+  }
+  
+  .error {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--red);
+  }
+  
+  .error--hidden {
+    display: none;
+  }
+  
+  /* Buttons */
+  .btn {
+    margin: 0 0 24px;
+    padding: 11px 30px 10px;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    background: var(--primary);
+    transition: color .15s ease, background-color .15s ease;
+  }
+  
+  .btn:hover {
+    background: var(--primary-dark);
+  }
+  
+  .btn--secondary {
+    color: var(--almost-black);
+    background: var(--secondary);
+  }
+  
+  .btn--secondary:hover {
+    background: var(--secondary-dark);
+  }
+  
+  input[type=submit] {
+    margin: 34px auto 24px;
+    display: block;
+  }
+  
+  .container {
+      position: relative;
+      margin-top: 100px;
+  }
+  nav {
+      position: fixed;
+      z-index: 10;
+      left: 0;
+      right: 0;
+      top: 0;
+    font-family: sans-serif;
+      padding: 0 1%;
+      height: 50px;
+      /* background-color: #48bf97; */
+      background-image: #00000033;
+    /* background-image: linear-gradient(135deg, #9ddd9d 0%, #54e26c 84%); */
+  }
+  nav .logo {
+      float: left;
+      width: 40%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      color: #000;
+  }
+  nav .links {
+      float: right;
+      padding: 0;
+      margin: 0;
+      /* width: 60%; */
+      height: 100%;
+      display: flex;
+      /* justify-content: space-around; */
+      align-items: center;
+  }
+  nav .links li {
+      list-style: none;
+  }
+  nav .links a {
+      display: block;
+      /* padding: 1em; */
+      font-size: 16px;
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+  }
+  #nav-toggle {
+      position: absolute;
+      top: -100px;
+  }
+  nav .icon-burger {
+      display: none;
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  nav .icon-burger .line {
+      width: 30px;
+      height: 5px;
+      background-color: #fff;
+      margin: 5px;
+      border-radius: 3px;
+      transition: all .3s ease-in-out;
+  }
+  @media screen and (max-width: 768px) {
+      nav .logo {
+          float: none;
+          width: auto;
+          justify-content: center;
+      }
+      nav .links {
+          float: none;
+          position: fixed;
+          z-index: 9;
+          left: 0;
+          right: 0;
+          top: 100px;
+          bottom: 100%;
+          width: auto;
+          height: auto;
+          flex-direction: column;
+          justify-content: space-evenly;
+          background-color: rgba(0,0,0,.8);
+          overflow: hidden;
+          box-sizing: border-box;
+          transition: all .5s ease-in-out;
+      }
+      nav .links a {
+          font-size: 20px;
+      }
+      nav :checked ~ .links {
+          bottom: 0;
+      }
+      nav .icon-burger {
+          display: block;
+      }
+      nav :checked ~ .icon-burger .line:nth-child(1) {
+          transform: translateY(10px) rotate(225deg);
+      }
+      nav :checked ~ .icon-burger .line:nth-child(3) {
+          transform: translateY(-10px) rotate(-225deg);
+      }
+      nav :checked ~ .icon-burger .line:nth-child(2) {
+          opacity: 0;
+      }
+      
+  }
+  
+  .logout{
+    padding-left: 10px;
+    width: 30px;
+  }
+  
+  .dropbtn {
+    background-color: #04aa6d00;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown-content strong{
+    font-size: 15px;
+    line-height: 0%;
+  }
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    left:auto;
+    right:0;
+    margin-right:-10px;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #00000023;}

@@ -1,0 +1,27 @@
+{% extends "structure.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="/static/css/stylesmainpage.css">
+
+<div class="main">
+    <section class="searchbox">
+        <form action="" method="" autocomplete="off">
+            <h2>Search for any University you want</h2>
+            <div class="search">
+                <input type="text" placeholder="Search for a University" id="search" class="search-box">
+                <button>Search</button>
+            </div>
+            <div class="scroll">
+                <div class="suggestions" id="suggestions">
+                    <!-- suggestions from js will be inserted here -->
+                </div>
+                <div class="addnew suggestions">
+                    <a href="/adduni"><li><h2>Cant find your University here? Request here to get it on our site</h2></li></a>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+<script src="/static/js/mainpage.js"></script>
+{% endblock %}
